@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technologycal</title>
+
+  <style>
+  
+  </style>
+      <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Service</a></li>
+      <li>
+        <a href="#">Pages &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Blog Grid</a></li>
+          <li><a href="#">Feature</a></li>
+          <li><a href="#">Testimonial</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+    
+    <ul class="test">
+      <li><img class="logo" src="Logo(1).png"></li>
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+      <li class="hideOnMobile"><a href="#">Service</a></li>
+      <li class="hideOnMobile">
+        <a href="#">Pages &#9662;</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Blog Grid</a></li>
+          <li><a href="#">Feature</a></li>
+          <li><a href="#">Testimonial</a></li>
+        </ul>
+      </li>
+      <li class="hideOnMobile"><a href="#">Contact</a></li>
+      <div class="sign">
+        <li class="hideOnMobile in" ><a href="#">Login</a></li>
+      </div>
+      <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+  
+
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'flex';
+    }
+    
+    function hideSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>
